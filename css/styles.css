@@ -2,6 +2,8 @@
     --header-color: #2196F3;
     --title-color: #212121;
     --text-color: #757575;
+    --index-background-color: #ffffff;
+
 }
 
 
@@ -40,7 +42,7 @@ a {
 .header :hover, .header :focus {
     color: var(--header-color);
     }
-.header { background-color: #ffffff;
+.header { background-color: var(--index-background-color);
     text-decoration: none;
 }
 .header-page-name {
@@ -73,7 +75,7 @@ a {
 
 /* ---------------------HERO--------------------- */
 .menu{
-    background-color: #ffffff;
+    background-color: var(--index-background-color);
 }
 .hero {
     background-color: #2F303A;;
@@ -99,7 +101,7 @@ color: #FFFFFF
 }
 /* ---------------------ABOUT--------------------- */
 .about {
-    background-color: #ffffff;
+    background-color: var(--index-background-color);
 }
 .about-title {
     font-weight: 700;
@@ -117,9 +119,18 @@ color: #FFFFFF
     
     color: var(--text-color);
 }
-/* ---------------------TEAM--------------------- */
+/* ---------------------PICTURE--------------------- */
+.picture {
+    background-color: var(--index-background-color);
+}
+.picture-title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+    /* ---------------------TEAM--------------------- */
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
