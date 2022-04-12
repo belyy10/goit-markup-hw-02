@@ -3,19 +3,25 @@
     --title-color: #212121;
     --text-color: #757575;
     --index-background-color: #ffffff;
-
+    --accent-color: #ffffff;
 }
-
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto', sans-serif;}
+    font-size: 14px;
+    color: var(--index-background-color);
+    color: var(--text-color)
 
+}
+    
 a :active,
 a {
     text-decoration: none;
     color: #212121;
 }
+button {
+    cursor: pointer;}
+
 .link {
     text-decoration: none;
 }
@@ -34,49 +40,46 @@ a {
     clip-path: inset(50%);
     margin: -1px;
 }
-.btn {
-    cursor: pointer;
-}
-
-/* ---------------------HEADER--------------------- */
-.header :hover, .header :focus {
-    color: var(--header-color);
-    }
-.header { background-color: var(--index-background-color);
-    text-decoration: none;
-}
-.header-page-name {
+.logo {
     font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--title-color);
+    }
+.logo-web {
+    color: #2196F3;
 }
-.header-web {
-    color:var(--header-color)
+
+
+/* ---------------------HEADER--------------------- */
+.header {
+    color: var(--header-color);
+    }
+.header { 
+    text-decoration: none;
 }
-.header-item {
+.header-list :hover,
+.header-list :focus {
+    color: var(--header-color);
+}
+.header-item, .header-contacts {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 .current {
     color: var(--header-color);
 }
+.header-contacts :hover,.header-contacts :focus {
+    color: var(--header-color);
+}
+ 
 .header-contacts {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
     list-style: none;
 }
 
 /* ---------------------HERO--------------------- */
-.menu{
-    background-color: var(--index-background-color);
-}
+
 .hero {
     background-color: #2F303A;;
 }
@@ -100,12 +103,8 @@ color: #FFFFFF
     color: #ffffff;
 }
 /* ---------------------ABOUT--------------------- */
-.about {
-    background-color: var(--index-background-color);
-}
 .about-title {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -113,21 +112,18 @@ color: #FFFFFF
 }
 .about-text {
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71px;
     letter-spacing: 0.03em;
-    
-    color: var(--text-color);
+
 }
 /* ---------------------PICTURE--------------------- */
-.picture {
-    background-color: var(--index-background-color);
-}
+
 .picture-title{
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--title-color)
 }
     /* ---------------------TEAM--------------------- */
 .team-title {
@@ -158,24 +154,23 @@ color: #FFFFFF
 .footer {
     background-color: #2F303A;
 }
-.footer-page-name {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    
+.footer .logo {
     color: #FFFFFF;
 }
-.footer-web {
-   color: #2196F3;
+.footer-adress :hover,
+.footer-adress :focus {
+    color: var(--accent-color);
 }
+
+.footer-web {
+   color: var(--header-color);
+}
+
 .footer-adress {
     font-style: normal;
 }
 .footer-street {
 font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
 
 color: #FFFFFF
@@ -190,29 +185,25 @@ color: #FFFFFF
 }
 /* ---------------------SECOND PAGE--------------------- */
 /* ---------------------MENU--------------------- */
-.menu-list-btn :hover, .menu-list-btn:focus 
+.menu-list-btn :hover
 {
 color:#FFFFFF ;
 background-color: #2196F3
 }
-.menu-btn-all { 
+.menu-btn {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    background-color: #2196F3;
     font-size: 16px;
     line-height: 1.63;
+    background-color: #FFFFFF;
+    color: #212121;
+}
+.menu-btn.current { 
+    background-color: #2196F3;
     color: #FFFFFF;
 }
-.menu-btn {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.63;
-background-color:#FFFFFF ;
-color: #212121;
-}
+
 /* ---------------------PORTFOLIO-------------------- */
 .portfolio-item-title {
     font-weight: 700;
@@ -226,5 +217,4 @@ color: #212121;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--text-color);
 }
