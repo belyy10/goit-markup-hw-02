@@ -63,6 +63,9 @@ a {
     color: var(--accent-color)
 }
  
+.header-list{
+    list-style: none;
+}
 .header-mail, .header-tel {
     color: var(--primary-text-color);
 }
