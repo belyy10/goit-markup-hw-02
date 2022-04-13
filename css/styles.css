@@ -142,8 +142,8 @@ color: var(--primary-white-color)
 .footer .logo {
     color: var(--primary-white-color);
 }
-.footer-adress :hover,
-.footer-adress :focus {
+.footer-item:hover,
+.footer-item:focus {
     color: var(--accent-color);
 }
 
